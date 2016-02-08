@@ -17,7 +17,7 @@ def checkWinner(board, player):
     print('Checking if ' + player + ' is a winner...')
     player=input()
 
-winner = ((board['top-L']== player and board['top-M']== player and board['top-R']== player or
+  return  ((board['top-L']== player and board['top-M']== player and board['top-R']== player or
            board['mid-L']== player and board['mid-M']== player and board['mid-R']== player or
            board['low-L']== player and board['low-M']== player and board['low-R']== player or
            board['top-L']== player and board['mid-L']== player and board['low-L']== player or
@@ -25,7 +25,7 @@ winner = ((board['top-L']== player and board['top-M']== player and board['top-R'
            board['top-R']== player and board['mid-R']== player and board['low-R']== player or
            board['top-L']== player and board['mid-M']== player and board['low-R']== player or
            board['top-R']== player and board['mid-M']== player and board['low-L']== player))
-return winner
+
     
     
     # TO DO #################################################################
